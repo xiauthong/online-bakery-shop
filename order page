@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+        <style>
+
+            body{
+                background-color: rgba(223, 167, 127, 0.86);
+                margin: 0;
+                
+            }
+
+            .container,.container1{
+                display: flex;
+            }
+
+             .welcome{
+                background-color: rgba(131, 59, 23, 0.774);
+                width: 30%;
+                text-align: center;
+                color: white;
+                height: 720px;
+                font-size: 20px;
+                
+             }
+
+             .order{
+                background-color: rgb(232, 208, 179);
+                width: 70%;
+                text-align: center;
+                
+             }
+
+
+             .aboutusbutton{
+                background-color: rgba(247, 161, 99, 0.86);
+                color: white;
+                text-align: center;
+                padding: 15px 32px;
+                display:inline-block;
+                border: none;
+                margin-top: 30px;
+                font-size: 30px;
+                cursor: pointer;
+                width: 300px;
+                text-decoration: none;
+
+             }
+
+             .aboutusbutton:hover{
+
+                background-color: rgba(189, 105, 45, 0.86);
+                color: white;
+                
+             }
+
+             .menubutton{
+                background-color: rgba(247, 161, 99, 0.86);
+                color: white;
+                text-align: center;
+                padding: 15px 32px;
+                display:inline-block;
+                border: none;
+                margin-top: 30px;
+                font-size: 30px;
+                cursor: pointer;
+                width: 300px;
+                text-decoration: none;
+
+             }
+
+             .menubutton:hover{
+
+                background-color: rgba(189, 105, 45, 0.86);
+                color: white;
+                
+             }
+
+             .orderbutton{
+                background-color: rgba(247, 161, 99, 0.86);
+                color: white;
+                text-align: center;
+                padding: 15px 32px;
+                display:inline-block;
+                border: none;
+                margin-top: 30px;
+                font-size: 30px;
+                cursor: pointer;
+                width: 300px;
+                text-decoration: none;
+
+             }
+
+             .orderbutton:hover{
+
+                background-color: rgba(189, 105, 45, 0.86);
+                color: white;
+                
+             }
+
+             .contactbutton{
+                background-color: rgba(247, 161, 99, 0.86);
+                color: white;
+                text-align: center;
+                padding: 15px 32px;
+                display:inline-block;
+                border: none;
+                margin-top: 30px;
+                font-size: 30px;
+                cursor: pointer;
+                width: 300px;
+                text-decoration: none;
+
+             }
+
+             .contactbutton:hover{
+
+                background-color: rgba(189, 105, 45, 0.86);
+                color: white;
+                
+             }
+
+             table{
+                border-collapse: collapse;
+                width: 90%;
+                margin-top: 30px;
+                margin-left: 50px;
+             }
+
+             th,td{
+                border: 1px solid black;
+                text-align: center;
+                padding: 8px;
+             }
+
+             .totalbox{
+                width: 760px;
+                height: 215px;
+                background-color: rgba(170, 144, 101, 0.793);
+                margin-left: 90px;
+                margin-top: 30px;
+             }
+
+             .attribute{
+                font-size: 18px;
+                margin-left: 30px;
+             }
+
+             .attribute1{
+                font-size: 18px;
+                margin-left: 30px;
+             }
+
+             .total{
+                margin-left: 36px;
+                width: 60%;
+             }
+
+             .amount{
+                margin-left: 0px;
+                width: 60%;
+             }
+
+             .balance{
+                margin-left: 5px;
+                width: 60%;
+             }
+
+             input[type=text] {
+                width: 60%;
+                height: 10px;
+                padding: 15px;
+                margin-top: 10px;
+                margin-left: 50px;
+                display: inline-block;
+                border: none;
+                background: #f1f1f1;
+             }
+
+             .button{
+                background-color: rgba(217, 215, 214, 0.86);
+                border: solid black 1px;
+                color: black;
+                padding: 10px 20px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                margin-left: 150px;
+                margin-top: 20px;
+                cursor:pointer;
+                font-size: 20px;
+                width: 200px;
+             }
+
+             .button:hover{
+
+               background-color: rgba(25, 23, 22, 0.86);
+               color: white;
+
+            }
+
+            /*mobile size*/
+            @media screen and (max-width:600px) {
+
+             .welcome{
+
+                width: 35%;
+                font-size: 11px;
+                height: 830px;
+            }
+
+            .order{
+                height: 830px;
+            }
+
+
+             .aboutusbutton,.menubutton,.orderbutton,.contactbutton{
+                width: 30%;
+                font-size: 16px;
+            }
+
+            table{
+                width: 80%;
+            }
+
+            .totalbox{
+                width: 80%;
+                margin-left: 50px;
+                height: 360px;
+            }
+
+            .container1{
+                display: flex;
+                flex-direction: column;
+            }
+
+            .attribute{
+                margin-left: -150px;
+                font-size: 15px;
+            }
+
+            .attribute1{
+                margin-left: -170px;
+                font-size: 15px;
+            }
+
+            .total{
+                margin-left: -15px;
+            }
+
+            .amount{
+                margin-left: -15px;
+            }
+
+            .balance{
+                margin-left: -15px;
+
+            }
+
+            .button{
+                margin-left: 100px;
+            }
+
+
+
+
+            }
+
+            /*Tablet size*/
+            @media screen and (min-width:600px) and (max-width:800px){
+
+             .welcome{
+                 width: 35%;
+                 font-size: 16px;
+                 height: 700px;
+            }
+
+             .aboutusbutton,.menubutton,.orderbutton,.contactbutton{
+                 width: 40%;
+                 font-size: 16px;
+            }
+
+             .order{
+                 width: 65%;
+                 height: 700px;
+             }
+
+             table{
+                margin-left: 25px;
+                
+            }
+
+            .totalbox{
+                width: 80%;
+                margin-left: 50px;
+                height: 240px;
+            }
+
+            .attribute1{
+                margin-left: 30px;
+             
+               
+            }
+
+            .total{
+                margin-left: 35px;
+                margin-top: 5px;
+            }
+
+            .amount,.balance{
+                margin-top: 5px;
+            }
+
+            .button{
+                margin-left: 30px;
+            }
+        }
+          
+
+        </style>
+
+      
+    </head>
+<body>
+
+    <div class="container">
+        <div class="welcome">
+            <h1>WELCOME</h1>
+            <a href="abotus.html" class="aboutusbutton">About Us</a>
+            <a href="menu.html" class="menubutton">Menu</a>
+            <a href="order.html" class="orderbutton">Order Details</a>
+            <a href="contact.html" class="contactbutton">Contact</a>
+            
+        </div>
+        <div class="order">
+            <table id="productTable">
+                <tr>
+                    <th>Product Name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total Price</th>
+                </tr>
+                <tbody id="orderBody">
+                <tr>
+                    <td>Product 1</td>
+                    <td><input type="text" class="quantity" value="1"></td>
+                    <td><input type="text" class="price" value="50.00"></td>
+                    <td><input type="text" class="totalPrice" disabled></td>
+                </tr>
+
+                <tr>
+                    <td>Product 2</td>
+                    <td><input type="text" class="quantity" value="1"></td>
+                    <td><input type="text" class="price" value="50.00"></td>
+                    <td><input type="text" class="totalPrice" disabled></td>
+                </tr>
+
+                <tr>
+                    <td>Product 3</td>
+                    <td><input type="text" class="quantity" value="1"></td>
+                    <td><input type="text" class="price" value="50.00"></td>
+                    <td><input type="text" class="totalPrice" disabled></td>
+                </tr>
+            </tbody>
+           
+               
+            </table>
+
+            <div class="totalbox">
+                <div class="container1">
+                    <div class="attribute1">
+                        <h2>Total :</h2>
+                    </div>
+                    <div class="total">
+                         <input type="text" id="total" name="total" disabled>   
+                    </div>            
+                </div>
+
+                <div class="container1">
+                    <div class="attribute">
+                        <h2>Amount :</h2>
+                    </div>
+                    <div class="amount">
+                         <input type="text" id="amount" name="amount" disabled>  
+                    </div>             
+                </div>
+
+                <div class="container1">
+                    <div class="attribute">
+                        <h2>Balance :</h2>
+                    </div>
+                    <div class="balance">
+                         <input type="text" id="balance" name="balance" disabled> 
+                    </div>              
+                </div>
+            </div>
+
+            <div class="container1">
+            <button class="button cancel" onclick="payClicked('Cancel')">Cancel</button>
+            <button class="button pay" onclick="payClicked('Pay')">Pay</button>
+            </div>
+        
+            
+        </div>
+    </div>
+
+    <script>
+        
+        var orderData=[
+            {productName:"Coconut Bun",quantity:0,price:3.40},
+            {productName:"Bagel",quantity:0,price:2.00},
+            {productName:"Cheese Cake",quantity:0,price:15.00},
+            {productName:"Cookies",quantity:0,price:3.00},
+            {productName:"Croissant",quantity:0,price:2.50},
+            {productName:"Cupcakes",quantity:0,price:5.00},
+            {productName:"Fruit Tart",quantity:0,price:6.00},
+            {productName:"Loaf",quantity:0,price:2.50},
+
+
+        ];
+
+        function populateOrderTable(){
+            var orderBody=document.getElementById("orderBody");
+
+            orderBody.innerHTML="";
+
+            orderData.forEach(function(item){
+                var row=document.createElement("tr");
+                row.innerHTML=`
+                <td>${item.productName}</td>
+                <td><input type="number" class="quantityInput" value="${item.quantity}" onchange="updateTotal(this)"></td>
+                <td>${item.price.toFixed(2)}</td>
+                <td>${(item.quantity*item.price).toFixed(2)}</td>
+                `;
+                orderBody.appendChild(row);
+            })
+        }
+
+        function calculateTotal(){
+            var total=0;
+            var amountPaid=0;
+
+            var rows=document.querySelectorAll("#productTable tbody tr");
+            rows.forEach(function(row){
+                var totalPrice=parseFloat(row.cells[3].innerHTML);
+                total+=totalPrice
+            })
+
+            amountPaid=50;
+
+            var balance=total-amountPaid;
+
+            document.getElementById("total").value=total.toFixed(2);
+            document.getElementById("amount").value=amountPaid.toFixed(2);
+            document.getElementById("balance").value=balance.toFixed(2);
+
+        }
+
+        function payClicked(action){
+            if(action==="Pay"){
+                alert("Payment Proceed!")
+            }
+            else if(action==="Cancel"){
+                alert("Payment Cancelled!")
+            }
+           
+        }
+
+        function updateTotal(input){
+            var row=input.closest("tr");
+            var quantity=parseInt(input.value,10);
+            var price=parseFloat(row.cells[2].innerText);
+            var totalPrice=quantity*price;
+            row.cells[3].innerText=totalPrice.toFixed(2);
+
+
+            calculateTotal();
+        }
+
+        document.addEventListener("DOMContentLoaded",function(){
+            populateOrderTable();
+            calculateTotal();
+        })
+
+    </script>
+
+
+    
+
+</body>
+</html>
