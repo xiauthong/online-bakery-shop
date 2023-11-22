@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+        <style>
+
+            body{
+                background-color: rgba(223, 167, 127, 0.86);
+                margin: 0;
+                
+            }
+
+            .container,.container1,.container2{
+                display: flex;
+            }
+
+             .welcome{
+                background-color: rgba(131, 59, 23, 0.774);
+                width: 30%;
+                text-align: center;
+                color: white;
+                height: 600px;
+                font-size: 20px;
+                
+             }
+
+             .menu{
+                background-color: rgb(232, 208, 179);
+                width: 70%;
+                text-align: center;
+                
+             }
+
+
+
+             .abouttext h3{
+                margin-top: 10px;
+                font-size: 28px;
+    
+             }
+
+             .aboutusbutton{
+                background-color: rgba(247, 161, 99, 0.86);
+                color: white;
+                text-align: center;
+                padding: 15px 32px;
+                display:inline-block;
+                border: none;
+                margin-top: 30px;
+                font-size: 30px;
+                cursor: pointer;
+                width: 300px;
+                text-decoration: none;
+
+             }
+
+             .aboutusbutton:hover{
+
+                background-color: rgba(189, 105, 45, 0.86);
+                color: white;
+                
+             }
+
+             .menubutton{
+                background-color: rgba(247, 161, 99, 0.86);
+                color: white;
+                text-align: center;
+                padding: 15px 32px;
+                display:inline-block;
+                border: none;
+                margin-top: 30px;
+                font-size: 30px;
+                cursor: pointer;
+                width: 300px;
+                text-decoration: none;
+
+             }
+
+             .menubutton:hover{
+
+                background-color: rgba(189, 105, 45, 0.86);
+                color: white;
+                
+             }
+
+             .orderbutton{
+                background-color: rgba(247, 161, 99, 0.86);
+                color: white;
+                text-align: center;
+                padding: 15px 32px;
+                display:inline-block;
+                border: none;
+                margin-top: 30px;
+                font-size: 30px;
+                cursor: pointer;
+                width: 300px;
+                text-decoration: none;
+
+             }
+
+             .orderbutton:hover{
+
+                background-color: rgba(189, 105, 45, 0.86);
+                color: white;
+                
+             }
+
+             .contactbutton{
+                background-color: rgba(247, 161, 99, 0.86);
+                color: white;
+                text-align: center;
+                padding: 15px 32px;
+                display:inline-block;
+                border: none;
+                margin-top: 30px;
+                font-size: 30px;
+                cursor: pointer;
+                width: 300px;
+                text-decoration: none;
+
+             }
+
+             .contactbutton:hover{
+
+                background-color: rgba(189, 105, 45, 0.86);
+                color: white;
+                
+             }
+
+             .brownsquare{
+                background-color: rgba(114, 73, 41, 0.65);
+                width: 230px;
+                height: 270px;
+                margin-left: 0px;
+                margin-top: 25px;
+                border: solid 2px rgb(232, 208, 179);
+             }
+
+            .brownsquare h3{
+                font-size: 20px;
+                margin-top: 10px;
+                
+            }
+
+            .image{
+                width: 130px;
+                height: 130px;
+                margin-left: 50px;
+                margin-top: 0;
+            
+
+            }
+
+            .numberfield{
+                width: 30px;
+                margin-top: 10px;
+            }
+
+            .button{
+                background-color: rgba(217, 215, 214, 0.86);
+                border: none;
+                color: black;
+                padding: 10px 20px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                margin-left: 5px;
+                cursor:pointer;
+
+            }
+
+            .button:hover{
+
+                background-color: rgba(25, 23, 22, 0.86);
+                color: white;
+
+            }
+
+            input[type="number"] {
+               padding: 10px;
+               width: 100px;
+               font-size: 16px;
+               border: 1px solid #ccc;
+               border-radius: 5px;
+               
+            }
+
+            /*mobile size*/
+            @media screen and (max-width:600px) {
+
+             .welcome{
+                   width: 35%;
+                   font-size: 11px;
+                   height: 1230px;
+            }
+
+
+             .aboutusbutton,.menubutton,.orderbutton,.contactbutton{
+                   width: 30%;
+                   font-size: 16px;
+            }
+
+             .menu{
+                   width: 65%;
+                   height: 1230px;
+            }
+
+            .container1{
+                display: flex;
+                flex-direction: column;
+            }
+            .brownsquare{
+                width: 48%;
+                margin-left: 5px;
+                margin-right: 5px;
+              
+            }
+
+            .image{
+                margin-left: 20px;
+               
+            }
+
+
+            } 
+
+            /*Tablet size*/
+            @media screen and (min-width:600px) and (max-width:800px){
+
+               .welcome{
+                     width: 35%;
+                     font-size: 16px;
+                     height: 1230px;
+                }
+
+                .aboutusbutton,.menubutton,.orderbutton,.contactbutton{
+                     width: 40%;
+                     font-size: 16px;
+                }
+
+                .menu{
+                     width: 65%;
+                     height: 1230px;
+                 }
+
+
+
+                .container1{
+                     display: flex;
+                     flex-direction: column;
+                 }
+
+                 .brownsquare{
+                     width: 48%;
+                     margin-left: 5px;
+                     margin-right: 5px;
+              
+                }
+
+
+
+
+                  }
+
+
+
+
+     
+
+   
+             
+
+        </style>
+    </head>
+<body>
+
+    <div class="container">
+        <div class="welcome">
+            <h1>WELCOME</h1>
+            <a href="abotus.html" class="aboutusbutton">About Us</a>
+            <a href="menu.html" class="menubutton">Menu</a>
+            <a href="order.html" class="orderbutton">Order Details</a>
+            <a href="contact.html" class="contactbutton">Contact</a>
+            
+        </div>
+        <div class="menu">
+            <div class="container1">
+                <div class="container2">
+                <div class="brownsquare">
+                    <h3>Coconut Bun<br>RM3.40</h3>
+                    <div class="image">
+                        <img src="coconutbuns.png" alt="coconutbuns" width="130px" height="130px">
+                        <div class="numberfield">
+                            <div class="container">
+                            <input type="number" id="quantity_coconut" name="quantity" min="1" max="100">
+                            <button class="button" id="addCoconut" onclick="addToCart('Coconut Bun','quantity_coconut')">Add</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="brownsquare">
+                    <h3>Bagel<br>RM2.00</h3>
+                    <div class="image">
+                        <img src="bagel.jpg" alt="bagel" width="130px" height="130px">
+                        <div class="numberfield">
+                            <div class="container">
+                                <input type="number" id="quantity_bagel" name="quantity" min="1" max="100">
+                                <button class="button" id="addBagel" onclick="addToCart('Bagel','quantity_bagel')">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="container2">
+                <div class="brownsquare">
+                    <h3>Cheese Cake<br>RM15.00</h3>
+                    <div class="image">
+                        <img src="cheesecake.jpg" alt="cheesecake" width="130px" height="130px">
+                        <div class="numberfield">
+                            <div class="container">
+                                <input type="number" id="quantity_cheesecake" name="quantity" min="1" max="100">
+                                <button class="button" id="addCheesecake" onclick="addToCart('Cheese Cake','quantity_cheesecake')">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="brownsquare">
+                    <h3>Cookies<br>RM3.00</h3>
+                    <div class="image">
+                        <img src="cookies.jpg" alt="cookies" width="130px" height="130px">
+                        <div class="numberfield">
+                            <div class="container">
+                                <input type="number" id="quantity_cookies" name="quantity" min="1" max="100">
+                                <button class="button" id="addCookies" onclick="addToCart('Cookies','quantity_cookies')">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+
+            <div class="container1">
+                <div class="container2">
+                <div class="brownsquare">
+                    <h3>Croissant<br>RM2.50</h3>
+                    <div class="image">
+                        <img src="croissants.jpg" alt="croissant" width="130px" height="130px">
+                        <div class="numberfield">
+                            <div class="container">
+                                <input type="number" id="quantity_croissant" name="quantity" min="1" max="100">
+                                <button class="button" id="addCroissant" onclick="addToCart('Croissant','quantity_croissant')">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="brownsquare">
+                    <h3>Cups Cake<br>RM5.00</h3>
+                    <div class="image">
+                        <img src="cupcakes.jpg" alt="cupcakes" width="130px" height="130px">  
+                        <div class="numberfield">
+                            <div class="container">
+                                <input type="number" id="quantity_cupcakes" name="quantity" min="1" max="100">
+                                <button class="button" id="addCupcakes" onclick="addToCart('Cupcakes','quantity_cupcakes')">Add</button>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                </div>
+                <div class="container2">
+                <div class="brownsquare">
+                    <h3>Fruit Tarts<br>RM6.00</h3>
+                    <div class="image">
+                        <img src="fruittart.jpg" alt="fruittart" width="130px" height="130px">  
+                        <div class="numberfield">
+                            <div class="container">
+                                <input type="number" id="quantity_fruittart" name="quantity" min="1" max="100">
+                                <button class="button" id="addFruittart" onclick="addToCart('Fruit tart','quantity_fruittart')">Add</button>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="brownsquare">
+                    <h3>Loaf<br>RM2.50</h3>
+                    <div class="image">
+                        <img src="loaf.png" alt="loaf" width="130px" height="130px">
+                        <div class="numberfield">
+                            <div class="container">
+                                <input type="number" id="quantity_loaf" name="quantity" min="1" max="100">
+                                <button class="button" id="addLoaf" onclick="addToCart('Loaf','quantity_loaf')">Add</button>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        
+
+        <script>
+
+            document.addEventListener("DOMContentLoaded", function() {
+            function addToCart(productName, quantityId) {
+                var quantity = document.getElementById(quantityId).value;
+                alert("Added " + quantity + " " + productName + "(s) to the cart!");
+              
+            }
+
+            var coconutButton = document.getElementById("addCoconut");
+            coconutButton.addEventListener("click", function() {
+                addToCart("Coconut Bun", "quantity_coconut");
+            });
+
+        });
+
+        document.addEventListener("DOMContentLoaded",function(){
+            function addToCart(productName,quantityId){
+                var quantity=document.getElementById(quantityId).value;
+                alert("Added " + quantity + " " + productName + "(s) to the cart!")
+            }
+
+            var bagelButton = document.getElementById("addBagel");
+            bagelButton.addEventListener("click",function(){
+                addToCart("Bagel","quantity_bagel")
+            })
+        })
+
+        document.addEventListener("DOMContentLoaded",function(){
+            function addToCart(productName,quantityId){
+                var quantity=document.getElementById(quantityId).value;
+                alert("Added " + quantity + " " + productName + "(s) to the cart!")
+            }
+
+            var cheesecakeButton=document.getElementById("addCheesecake");
+            cheesecakeButton.addEventListener("click",function(){
+                addToCart("Cheese Cake","quantity_cheesecake")
+            })
+        })
+
+        document.addEventListener("DOMContentLoaded",function(){
+            function addToCart(productName,quantityId){
+                var quantity=document.getElementById(quantityId).value;
+                alert("Added " + quantity + " " + productName + "(s) to the cart!")
+            }
+
+            var cookiesButton=document.getElementById("addCookies");
+            cookiesButton.addEventListener("click",function(){
+                addToCart("Cookies","quantity_cookies")
+            })
+        })
+
+        document.addEventListener("DOMContentLoaded",function(){
+            function addToCart(productName,quantityId){
+                var quantity=document.getElementById(quantityId).value;
+                alert("Added " + quantity + " " + productName + "(s) to the cart!")
+            }
+
+            var croissantButton=document.getElementById("addCroissant");
+            croissantButton.addEventListener("click",function(){
+                addToCart("Croissant","quantity_croissant")
+            })
+        })
+
+        document.addEventListener("DOMContentLoaded",function(){
+            function addToCart(productName,quantityId){
+                var quantity=document.getElementById(quantityId).value;
+                alert("Added " + quantity + " " + productName + "(s) to the cart!")
+            }
+
+            var cupcakesButton=document.getElementById("addCupcakes");
+            cupcakesButton.addEventListener("click",function(){
+                addToCart("Cupcakes","quantity_cupcakes")
+            })
+        })
+
+        document.addEventListener("DOMContentLoaded",function(){
+            function addToCart(produnctName,quantityId){
+                var quantity=document.getElementById(quantityId).value;
+                alert("Added " + quantity + " " + produnctName + "(s) to the cart!")
+            }
+
+            var fruittartButton=document.getElementById("addFruittart");
+            fruittartButton.addEventListener("click",function(){
+                addToCart("Fruit Tarts","quantity_fruittart")
+            })
+        })
+
+        document.addEventListener("DOMContentLoaded",function(){
+            function addToCart(productName,quantityId){
+                var quantity=document.getElementById(quantityId).value;
+                alert("Added " + quantity + " " + productName + "(s) to the cart!")
+            }
+
+            var loafButton=document.getElementById("addLoaf");
+            loafButton.addEventListener("click",function(){
+                addToCart("Loaf","quantity_loaf")
+            })
+        })
+
+           
+           
+        
+        </script>
+        
+    
+</body>
+</html>
+           
+        
+    
+
+    
