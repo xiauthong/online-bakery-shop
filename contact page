@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+        <style>
+
+            body{
+                background-color: rgba(223, 167, 127, 0.86);
+                margin: 0;
+                
+            }
+
+            .container,.container1{
+                display: flex;
+            }
+
+             .welcome{
+                background-color: rgba(131, 59, 23, 0.774);
+                width: 30%;
+                text-align: center;
+                color: white;
+                height: 720px;
+                font-size: 20px;
+                
+             }
+
+             .contact{
+                background-color: rgb(232, 208, 179);
+                width: 70%;
+                text-align: center;
+                
+             }
+
+             .contact h1{
+                text-align: center;
+                margin-top: 20px;
+                font-size: 70px;
+                color: rgb(44, 34, 22);
+                text-decoration: underline;
+             }
+
+
+             .aboutusbutton{
+                background-color: rgba(247, 161, 99, 0.86);
+                color: white;
+                text-align: center;
+                padding: 15px 32px;
+                display:inline-block;
+                border: none;
+                margin-top: 30px;
+                font-size: 30px;
+                cursor: pointer;
+                width: 300px;
+                text-decoration: none;
+
+             }
+
+             .aboutusbutton:hover{
+
+                background-color: rgba(189, 105, 45, 0.86);
+                color: white;
+                
+             }
+
+             .menubutton{
+                background-color: rgba(247, 161, 99, 0.86);
+                color: white;
+                text-align: center;
+                padding: 15px 32px;
+                display:inline-block;
+                border: none;
+                margin-top: 30px;
+                font-size: 30px;
+                cursor: pointer;
+                width: 300px;
+                text-decoration: none;
+
+             }
+
+             .menubutton:hover{
+
+                background-color: rgba(189, 105, 45, 0.86);
+                color: white;
+                
+             }
+
+             .orderbutton{
+                background-color: rgba(247, 161, 99, 0.86);
+                color: white;
+                text-align: center;
+                padding: 15px 32px;
+                display:inline-block;
+                border: none;
+                margin-top: 30px;
+                font-size: 30px;
+                cursor: pointer;
+                width: 300px;
+                text-decoration: none;
+
+             }
+
+             .orderbutton:hover{
+
+                background-color: rgba(189, 105, 45, 0.86);
+                color: white;
+                
+             }
+
+             .contactbutton{
+                background-color: rgba(247, 161, 99, 0.86);
+                color: white;
+                text-align: center;
+                padding: 15px 32px;
+                display:inline-block;
+                border: none;
+                margin-top: 30px;
+                font-size: 30px;
+                cursor: pointer;
+                width: 300px;
+                text-decoration: none;
+
+             }
+
+             .contactbutton:hover{
+
+                background-color: rgba(189, 105, 45, 0.86);
+                color: white;
+                
+             }
+
+             .locationimage{
+                width: 100px;
+                height: 100px;
+                margin-left: 420px;
+                
+                
+             }
+
+             .detail{
+                font-size: 20px;
+             }
+
+             .attribute{
+                font-size: 15px;
+                margin-left: 100px;
+             }
+
+             .message{
+                font-size: 15px;
+                margin-left: 100px;
+             }
+
+             input[type=text] {
+                width: 60%;
+                height: 10px;
+                padding: 15px;
+                margin-top: 10px;
+                margin-left: 75px;
+                display: inline-block;
+                border: none;
+                background: #f1f1f1;
+             }
+
+             textarea {
+                width: 60%;
+                height: 35px;
+                padding: 15px;
+                margin-top: 10px;
+                margin-left: 50px;
+                display: inline-block;
+                border: none;
+                background: #f1f1f1;
+             }
+
+             button[type="submit"]{
+                background-color: rgba(217, 215, 214, 0.86);
+                border: solid black 1px;
+                color: black;
+                padding: 10px 20px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                margin-left: 50px;
+                margin-top: 20px;
+                cursor:pointer;
+                font-size: 20px;
+                width: 200px;
+             }
+
+
+             /*mobile size*/
+             @media screen and (max-width:600px) {
+
+                .welcome{
+                    width: 35%;
+                    font-size: 11px;
+                    height: 700px;
+                }
+
+
+                .aboutusbutton,.menubutton,.orderbutton,.contactbutton{
+                    width: 30%;
+                    font-size: 16px;
+                }
+
+                .contact{
+                    width: 65%;
+                    height: 700px;
+                }
+
+                .contact h1{
+                    font-size: 40px;
+                }
+
+                .locationimage{
+                    width: 10%;
+                    height: auto;
+                    margin-left: 120px;
+                }
+
+                .detail{
+                    font-size: 14px;
+                }
+
+                .container1{
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .attribute{
+                    margin-left: -140px;
+                }
+
+                .message{
+                    margin-left: -120px;
+                }
+
+                input[type=textarea] {
+                margin-left: 75px;
+            
+             }
+
+    
+              
+                
+             }
+
+             /*Tablet size*/
+            @media screen and (min-width:600px) and (max-width:800px){
+
+                 .welcome{
+                     width: 35%;
+                     font-size: 16px;
+                     height: 570px;
+                 }
+
+                 .aboutusbutton,.menubutton,.orderbutton,.contactbutton{
+                     width: 40%;
+                     font-size: 16px;
+                 }
+
+                .contact{
+                     width: 65%;
+                     height: 570px;
+                }
+
+                .contact h1{
+                    font-size: 50px;
+                }
+
+                .locationimage{
+                    margin-left: 200px;
+                }
+
+                .detail{
+                    font-size: 17px;
+                }
+
+                .attribute{
+                    margin-left: 20px;
+                }
+
+                .message{
+                    margin-left: 20px;
+                }
+
+
+            }
+
+   
+             
+
+        </style>
+    </head>
+<body>
+
+    <div class="container">
+        <div class="welcome">
+            <h1>WELCOME</h1>
+            <a href="abotus.html" class="aboutusbutton">About Us</a>
+            <a href="menu.html" class="menubutton">Menu</a>
+            <a href="order.html" class="orderbutton">Order Details</a>
+            <a href="contact.html" class="contactbutton">Contact</a>
+            
+        </div>
+        <div class="contact">
+            <h1>Contact</h1>    
+        <div class="locationimage">
+            <img src="location.png" alt="location" height="120px" width="120px">
+        </div>
+        <div class="detail">
+            <h2>TEL : 012-3456789<br>bakeryshop@gmail.com</h2>   
+        </div>
+        <form>
+        <div class="container1">
+            <div class="attribute">
+                <h2>Name: </h2>
+            </div>
+            <input type="text" id="name" name="name">
+        </div>
+
+        <div class="container1">
+            <div class="attribute">
+                <h2>Email: </h2>
+            </div>
+            <input type="text" id="email" name="email">
+        </div>
+
+        <div class="container1">
+            <div class="message">
+                <h2>Message: </h2>
+            </div>
+            <textarea name="message"></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+        </form>
+
+        
+    </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded",function(){
+            var form=document.querySelector(".contact form");
+
+            form.addEventListener("submit",function(event){
+                event.preventDefault();
+
+                var name=document.querySelector("input[name='name']").value;
+                var email=document.querySelector("input[name='email']").value;
+                var message=document.querySelector("textarea[name='message']").value;
+
+                alert(`Name: ${name}\nEmail: ${email}\nMessage: ${message}`)
+            })
+        })
+    </script>
+
+    
+
+
+
+</body>
+</html>
