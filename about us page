@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+        <style>
+
+            .container,.container1{
+                display: flex;
+            }
+
+            body{
+                background-color: rgba(223, 167, 127, 0.86);
+                margin: 0;
+                
+            }
+
+             .welcome{
+                background-color: rgba(131, 59, 23, 0.774);
+                width: 30%;
+                text-align: center;
+                color: white;
+                height: 600px;
+                font-size: 20px;
+                
+             }
+
+             .aboutus{
+                background-color: rgb(232, 208, 179);
+                width: 70%;
+                text-align: center;
+                
+             }
+
+             .aboutus h1{
+                text-align: center;
+                margin-top: 20px;
+                font-size: 70px;
+                color: rgb(44, 34, 22);
+                text-decoration: underline;
+             }
+
+             .bakeryimage{
+                margin-left: 50px;
+             }
+
+             .abouttext{
+                width: 400px;
+                height: 400px;
+                margin-left: 70px;
+                text-align: justify;
+                
+
+             }
+
+             .abouttext h3{
+                margin-top: 10px;
+                font-size: 28px;
+    
+             }
+
+             .aboutusbutton{
+                background-color: rgba(247, 161, 99, 0.86);
+                color: white;
+                text-align: center;
+                padding: 15px 32px;
+                display:inline-block;
+                border: none;
+                margin-top: 30px;
+                font-size: 30px;
+                cursor: pointer;
+                width: 300px;
+                text-decoration: none;
+
+             }
+
+             .aboutusbutton:hover{
+
+                background-color: rgba(189, 105, 45, 0.86);
+                color: white;
+                
+             }
+
+             .menubutton{
+                background-color: rgba(247, 161, 99, 0.86);
+                color: white;
+                text-align: center;
+                padding: 15px 32px;
+                display:inline-block;
+                border: none;
+                margin-top: 30px;
+                font-size: 30px;
+                cursor: pointer;
+                width: 300px;
+                text-decoration: none;
+
+             }
+
+             .menubutton:hover{
+
+                background-color: rgba(189, 105, 45, 0.86);
+                color: white;
+                
+             }
+
+             .orderbutton{
+                background-color: rgba(247, 161, 99, 0.86);
+                color: white;
+                text-align: center;
+                padding: 15px 32px;
+                display:inline-block;
+                border: none;
+                margin-top: 30px;
+                font-size: 30px;
+                cursor: pointer;
+                width: 300px;
+                text-decoration: none;
+
+             }
+
+             .orderbutton:hover{
+
+                background-color: rgba(189, 105, 45, 0.86);
+                color: white;
+                
+             }
+
+             .contactbutton{
+                background-color: rgba(247, 161, 99, 0.86);
+                color: white;
+                text-align: center;
+                padding: 15px 32px;
+                display:inline-block;
+                border: none;
+                margin-top: 30px;
+                font-size: 30px;
+                cursor: pointer;
+                width: 300px;
+                text-decoration: none;
+
+             }
+
+             .contactbutton:hover{
+
+                background-color: rgba(189, 105, 45, 0.86);
+                color: white;
+                
+             }
+
+             .slider{
+               width: 330px;
+               height: 400px;
+               overflow: hidden;
+               margin-left: 30px;
+             }
+
+             .slider-wrapper{
+               width: 100%;
+               height: 320px;
+             }
+
+             .slider-wrapper img{
+               width: 100%;
+               height: 100%;
+               display: block;
+             }
+
+             .slider-footer{
+               height: 80px;
+               background-color: rgb(70, 52, 37);
+               padding: 12px 12px 0 12px;
+               position: relative;
+             }
+
+             .slider-footer .toggle{
+               position: absolute;
+               right: 0;
+               top: 12px;
+               display: flex;
+             }
+
+
+             .slider-footer .toggle button{
+               margin-right: 12px;
+               width: 28px;
+               height: 28px;
+               appearance: none;
+               border: none;
+               background-color:  rgba(255, 255, 255, 0.1);
+               color: #fff;
+               border-radius: 4px;
+               cursor: pointer;
+             }
+
+
+             .slider-footer .toggle button:hover{
+               background-color: gray;
+             }
+
+
+             .slider-footer p{
+               margin: 0;
+               color: #fff;
+               font-size: 18px;
+               margin-bottom: 10px;
+             }
+
+
+             .slider-indicator{
+               margin: 0;
+               padding: 0;
+               list-style: none;
+               display: flex;
+               align-items: center;
+             }
+
+             .slider-indicator li{
+               width: 8px;
+               height: 8px;
+               margin: 4px;
+               border-radius: 50%;
+               background: #fff;
+               opacity: 0.4;
+               cursor: pointer;
+             }
+
+             .slider-indicator li.active{
+               width: 12px;
+               height: 12px;
+               opacity: 1;
+             }
+
+
+
+
+             /*mobile size*/
+            @media screen and (max-width:600px) {
+
+              .welcome{
+                   width: 35%;
+                   font-size: 11px;
+                   height: 1000px;
+             }
+
+
+              .aboutusbutton,.menubutton,.orderbutton,.contactbutton{
+                   width: 30%;
+                   font-size: 16px;
+             }
+
+              .aboutus{
+                   width: 65%;
+                   height: 1000px;
+            }
+
+             .aboutus h1{
+                   font-size: 40px;
+            }
+
+            .container1{
+                display: flex;
+                flex-direction: column;
+            }
+
+            .bakeryimage{
+                height: auto;
+                width: 10%;
+                margin-left: 30px;
+                margin-right: 10px;
+            }
+
+            .abouttext{
+                width: 73%;
+                height: fit-content;
+                margin-left: 50px;
+               
+               
+            }
+
+            .abouttext h3{
+                margin-top: 10px;
+                font-size: 25px;
+    
+             }
+
+         
+
+
+
+             } 
+
+
+             /*Tablet size*/
+            @media screen and (min-width:600px) and (max-width:800px){
+
+                .welcome{
+                    width: 35%;
+                    font-size: 16px;
+                    height: 900px;
+                }
+
+                .aboutusbutton,.menubutton,.orderbutton,.contactbutton{
+                   width: 40%;
+                   font-size: 16px;
+             }
+
+             .aboutus{
+                width: 65%;
+                height: 900px;
+             }
+
+
+             .aboutus h1{
+                   font-size: 50px;
+            }
+
+            .container1{
+                display: flex;
+                flex-direction: column-reverse;
+            }
+
+            .abouttext h3{
+                margin-top: 10px;
+                font-size: 25px;
+    
+             }
+
+             .bakeryimage{
+                margin-top: 0;
+                margin-left: 10px;
+
+             }
+
+
+             .abouttext{
+             
+                margin-left: 45px;
+                height: fit-content;
+                
+               
+               
+            }
+
+          
+            
+
+
+             }
+
+
+   
+             
+
+        </style>
+    </head>
+<body>
+
+    <div class="container">
+        <div class="welcome">
+            <h1>WELCOME</h1>
+            <a href="abotus.html" class="aboutusbutton">About Us</a>
+            <a href="menu.html" class="menubutton">Menu</a>
+            <a href="order.html" class="orderbutton">Order Details</a>
+            <a href="contact.html" class="contactbutton">Contact</a>
+            
+        </div>
+        <div class="aboutus">
+            <h1>About Us</h1>
+            <div class="container">
+
+               <div class="slider">
+                  <div class="slider-wrapper">
+                      <img src="bakery1.jpg" alt="">
+                  </div>
+          
+                  <div class="slider-footer">
+                      <p>XXXXXXXXXX</p>
+                      <ul class="slider-indicator">
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                         
+                     
+                      </ul>
+                      <div class="toggle">
+                          <button class="prev">&lt;</button>
+                          <button class="next">&gt;</button>
+                      </div>
+          
+                  </div>
+          
+                  </div>
+
+                  <div class="abouttext">
+                     <h3>When in KL, don't miss a trip to Bakery Shop. Bakery Shop, with its rustic outdoor cafe and beautiful garden, to be a center of social life in KL, a place to meet people, bump into old friend, or sit quietly. Known since 1981 for great bagels, croissant, cakes and cookies. Bakery Shop include a coffee bar. Experience KL! Visit bakery shop.</h3>
+                 </div>
+                 
+                 
+              </div>
+
+           
+        </div>
+        </div>
+      </div>
+   
+  
+
+
+    <script>
+      
+        const sliderData=[
+            {url:"bakery1.jpg",title:"image1",color:"pink"},
+            {url:"bakery2.jpg",title:"image2",color:"grey"},
+            {url:"bakery3.jpg",title:"image3",color:"red"}
+         
+        ]
+
+        const img=document.querySelector(".slider-wrapper img")
+        const p=document.querySelector(".slider-footer p")
+        let i=0 //信号量 控制图片的张数
+
+        setInterval(function(){
+            i++
+        
+            if(i>=sliderData.length){
+                i=0
+            }
+
+            img.src=sliderData[i].url
+ 
+            p.innerHTML=sliderData[i].title
+         
+            document.querySelector(".slider-indicator .active").classList.remove("active")
+    
+            document.querySelector(`.slider-indicator li:nth-child(${i+1})`).classList.add("active")
+        },1000)
+
+    </script>
+
+    
+
+
+
+</body>
+</html>
