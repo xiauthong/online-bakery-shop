@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+        <style>
+
+            body{
+                background-color: rgba(223, 167, 127, 0.86);
+                margin: 0;
+                
+            }
+
+             .bakeryshop{
+                background-color: rgb(255, 255, 255);
+                width: 50%;
+             }
+
+             .login{
+                background-color: rgba(223, 167, 127, 0.86);
+                width: 50%;
+             }
+
+             .login h2{
+                text-align: center;
+                font-size: 50px;
+                margin-top: 90px;
+                margin-left: 45px;
+             }
+
+             .container,.container1{
+                display: flex;
+             }
+
+             .attribute{
+                font-size: 40px;
+                margin-left: 70px;
+                margin-top: 35px;
+             }
+
+             .username{
+                margin-left: 40px;
+                margin-top: 50px;
+                height: 50px;
+             }
+
+             .password{
+                margin-left: 50px;
+                margin-top: 50px;
+                height: 50px;
+             }
+
+             .button{
+                background-color: rgba(247, 161, 99, 0.86);
+                color: black;
+                text-align: center;
+                padding: 15px 32px;
+                display:inline-block;
+                border: none;
+                margin-left: 280px;
+                margin-top: 50px;
+                font-size: 30px;
+                cursor: pointer;
+                text-decoration: none;
+
+             }
+
+             .button:hover{
+
+                background-color: rgba(189, 105, 45, 0.86);
+                color: white;
+                
+             }
+
+
+
+                /*mobile size*/
+            @media screen and (max-width:600px) {
+
+                .bakeryshop{
+                    display: none;
+                    
+                    
+                }
+
+                .login{
+                    width: 100%;
+                    background-color: rgb(103, 80, 55);
+                    height: 550px;
+                }
+
+                .login h2{
+                
+                font-size: 60px;
+                color: wheat;
+               
+             }
+
+                .attribute{
+                    margin-left: 20px;
+                    color: wheat;
+                }
+
+                .button{
+                    margin-left: 230px;
+                    background-color: rgb(205, 175, 144);
+                    color: rgb(50, 34, 16);
+                    border-radius: 10px;
+                    border: solid 1px rgb(50, 34, 16);
+                }
+
+
+
+
+             } 
+
+
+             /*Tablet size*/
+            @media screen and (min-width:600px) and (max-width:800px){
+
+               .bakeryshop{
+                     width: 50%;
+                     height: 580px;
+               }
+
+               .bakeryshop img{
+                     width: 100%;
+                     margin-top: 60px;
+                }
+
+                .login{
+                     width: 50%;
+                     height: 580px;
+    
+                }
+
+                .container1{
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .attribute{
+                    font-size: 30px;
+                }
+
+                .username,.password{
+                    margin-top: 10px;
+                    margin-left: 70px;
+                }
+
+                .button{
+                    margin-left: 120px;
+                    margin-right: 120px;
+                    margin-top: 20px;
+                }
+
+
+
+
+
+
+
+            }
+
+
+          
+
+        </style>
+    </head>
+<body>
+
+    <div class="container">
+        <div class="bakeryshop">
+            <img src="project1/allimage/bakery.jpg" alt="bakery">
+        </div>
+        <div class="login">
+            <h2>Login Page</h2>
+            <div class="container1">
+                <div class="attribute">
+                    Username :
+                </div>
+                <div class="username">
+                    <input type="text" name="username" id="username" size="40" placeholder="Enter your username" required>
+                </div>
+            </div>
+
+            <div class="container1">
+                <div class="attribute">
+                    Password :
+                </div>
+                <div class="password">
+                    <input type="password" name="password" id="password" size="40" placeholder="Enter your password" required>
+                </div>  
+            </div>
+
+            <button id="loginButton" onclick="validateForm()" class="button">Login</button>
+
+            
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var loginButton = document.getElementById("loginButton");
+            if (loginButton) {
+                loginButton.addEventListener("click", function () {
+                    validateForm();
+                });
+            }
+    
+            function validateForm() {
+                var username = document.getElementById("username").value;
+                var password = document.getElementById("password").value;
+    
+                if (username === "" || password === "") {
+                    alert("Please enter both username and password.");
+                } else {
+                    // You can add more sophisticated validation or form submission logic here.
+                    // For a simple example, I'm just showing an alert for successful login.
+                    alert("Login successful!");
+                    window.location.href = 'abotus.html';
+                }
+            }
+        });
+    </script>
+
+
+
+
+</body>
+</html>
